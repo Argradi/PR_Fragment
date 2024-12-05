@@ -11,11 +11,23 @@
         android:id="@+id/button"
         android:layout_width="183dp"
         android:layout_height="70dp"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="@id/main"
-        app:layout_constraintEnd_toEndOf="@id/main"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#B12D2D"
+        android:text="Sacar carta"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/main"
-        android:layout_marginBottom="100dp"/>
+        app:layout_constraintEnd_toEndOf="@id/main"
+        app:layout_constraintStart_toStartOf="@id/main" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pokemontcg" />
 
     <FrameLayout
         android:id="@+id/frame"

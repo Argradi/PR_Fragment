@@ -1,5 +1,6 @@
 package com.ja_granados.pr_fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -69,9 +71,18 @@ public class Carta extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle saveInstanceState){
 
+        ImageButton flecha=view.findViewById(R.id.flecha);
         ImageView carta=view.findViewById(R.id.carta);
         TextView texto=view.findViewById(R.id.texto);
         super.onViewCreated(view, saveInstanceState);
+
+        flecha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(),MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         int num=(int)(Math.random()*100+1);
         if(num>0 && num<51){
