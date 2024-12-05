@@ -75,16 +75,57 @@ public class Carta extends Fragment {
 
         int num=(int)(Math.random()*100+1);
         if(num>0 && num<51){
-            carta.setImageResource(R.drawable.diglett);
-            texto.setText("Te ha tocado Diglet");
+            int num2=(int)(Math.random()*100+1);
+            if(num2>0 && num2<21){
+                carta.setImageResource(R.drawable.diglett);
+                texto.setText("Te ha tocado Diglet");
+            }
+            if(num2>20 && num2<41){
+                carta.setImageResource(R.drawable.riolu);
+                texto.setText("Te ha tocado Riolu");
+            }
+            if(num2>40 && num2<61){
+                carta.setImageResource(R.drawable.rockruff);
+                texto.setText("Te ha tocado Rockruf");
+            }
+            if(num2>60 && num2<81){
+                carta.setImageResource(R.drawable.froakie);
+                texto.setText("Te ha tocado Froakie");
+            }
+            if(num2>80 && num2<101){
+                carta.setImageResource(R.drawable.charmander);
+                texto.setText("Te ha tocado Charmander");
+            }
         }
         if(num>50 && num<91){
-            carta.setImageResource(R.drawable.greninja);
-            texto.setText("Te ha tocado Greninja, no esta mal");
+            int num2=(int)(Math.random()*100+1);
+            if(num2>0 && num2<26){
+                carta.setImageResource(R.drawable.greninja);
+                texto.setText("Te ha tocado Greninja, no esta mal");
+            }
+            if(num2>25 && num2<51){
+                carta.setImageResource(R.drawable.lucario);
+                texto.setText("TTe ha tocado Lucario, no esta mal");
+            }
+            if(num2>50 && num2<76){
+                carta.setImageResource(R.drawable.lycanroc);
+                texto.setText("Te ha tocado Lycanroc, no esta mal");
+            }
+            if(num2>75 && num2<101){
+                carta.setImageResource(R.drawable.gengar);
+                texto.setText("Te ha tocado Mega Gengar, no esta mal");
+            }
         }
         if(num>90 && num<101){
-            carta.setImageResource(R.drawable.charizard);
-            texto.setText("Te ha tocado Charizard BOOOOOOOF");
+            int num2=(int)(Math.random()*100+1);
+            if(num2>0 && num2<51){
+                carta.setImageResource(R.drawable.charizard);
+                texto.setText("Te ha tocado Charizard BOOOOOOOF");
+            }
+            else {
+                carta.setImageResource(R.drawable.moonbreon);
+                texto.setText("Te ha tocado Moonbreon, Que suerteeee");
+            }
         }
     }
 }
